@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shaoyangyang.myplayer.fragment.OnlineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/afrag_list_relayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/bfrag_list_imgv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_online_music_list_profile_headline" />
+
+            <TextView
+                android:id="@+id/bfrag_listname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bfrag_list_imgv"
+                android:text="在线音乐"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2">
+                <WebView
+                    android:id="@+id/online_music_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
